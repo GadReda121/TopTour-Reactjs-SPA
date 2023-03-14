@@ -1,0 +1,92 @@
+.fiveSection{
+    width:70%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+    justify-content: space-between;
+}
+
+.fiveSection .Images{
+    display: flex;
+    gap:2;
+    justify-content: space-between;
+}
+
+.fiveSection img{
+    width: 100%;
+    height: 250px;
+    border-radius: 4px;
+}
+
+.fiveSection img:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+
+.fiveSection .Title{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fiveSection .Title h3{
+    position: relative;
+    transition: all .3s;
+}
+.fiveSection h3:hover{
+    color:#b4dfd7;
+    cursor: pointer;
+}
+
+.fiveSection .Title h3::before{
+    content: '';
+    background-color: #1e1e1e;
+    width: 20%;
+    height:4px;
+    position: absolute;
+    top:-15%;
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.fiveSection .Title h3:hover::before{
+    width:40%;
+    background-color: #b4dfd7;
+}
+
+.fiveSection .Title h3::after{
+    content: '';
+    background-color: #1e1e1e;
+    width: 20%;
+    height:4px;
+    position: absolute;
+    bottom: -15%;
+    left: 0%;
+    border-radius: 20px;
+    transition: all .3s;
+}
+.fiveSection .Title h3:hover::after{
+    width:40%;
+    background-color: #b4dfd7;
+}
+
+@media screen and (max-width:851px){
+    .fiveSection{
+        width:80%;
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fiveSection img{
+        width: 100%;
+        height: 300px;
+        border-radius: 4px;
+    }
+
+    .Title{
+        grid-row: 1;
+    }
+}

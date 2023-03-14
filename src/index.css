@@ -1,0 +1,19 @@
+/* Font style */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cairo:wght@700&family=Changa:wght@500&family=Dancing+Script:wght@500&family=DynaPuff:wght@400;500;600;700&family=Edu+VIC+WA+NT+Beginner:wght@500&family=El+Messiri:wght@600&family=Fredoka:wght@500;600;700&family=Josefin+Sans:wght@600;700&family=Poppins:wght@600;700;800&family=Secular+One&display=swap');
+
+/* Start Global Css */
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  transition: all .3s;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Secular One', sans-serif;
+}
+
+body{
+  background-color: #f8f9fa;
+}
+/* End Global Css */

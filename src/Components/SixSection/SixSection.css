@@ -1,0 +1,65 @@
+.SixSection{
+    width:50%;
+    margin-left: 25%;
+    justify-content: center;
+    display: grid;
+    grid-row-gap: 30px;
+    position: relative;
+}
+
+.SixSection::before{
+    content: '';
+    height: 100%;
+    width: 8%;
+    background-color: #b4dfd7;
+    position: absolute;
+    left: -15%;
+    transition: linear .3s;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.SixSection:hover::before{
+    width:116%
+}
+.SixSection h3{
+    position: relative;
+    transition: all .3s;
+}
+.SixSection h3:hover{
+    color:#325a52;
+    cursor: pointer;
+}
+
+.SixSection h3::after{
+    position: absolute;
+    left: 0%;
+    bottom: -20%;
+    content: '';
+    background-color: #1e1e1e;
+    height : 4px;
+    width : 20%;
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.SixSection h3:hover::after{
+    width:38%;
+    background-color: #325a52;
+}
+
+@media screen and (max-width:851px){
+.SixSection{
+    width: 80%;
+    margin-left: 10%;
+}
+.SixSection::before{
+    content: '';
+    height: 100%;
+    width: 8%;
+    background-color: #b4dfd7;
+    position: absolute;
+    left: -15%;
+}
+
+}

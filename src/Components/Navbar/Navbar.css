@@ -1,0 +1,61 @@
+.navbarr{
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    margin-left: 15%;
+}
+
+.navbarr .font{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.navbarr .close{
+    display: none;
+    font-size: 25px;
+}
+
+.like:hover{
+    color: #7bc8ff;
+    cursor: pointer;
+}
+
+header .contact{
+    font-size: 30px;
+    position: absolute;
+    top:10%;
+    background-color: #000000;
+    color: #f8f9fa;
+    width: 70%;
+    height: 50%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap : 30px;
+    z-index: 999;
+    display: none;
+}
+
+header .contact a{
+    color: #f8f9fa;
+}
+
+header .contact a:hover{
+    color: #7bc8ff;
+    cursor: pointer;
+}
+
+@media screen and (max-width:851px) {
+    .navbarr{
+        margin: 25px auto;
+        display: flex;
+        justify-content: space-between;
+        width:80%;
+        margin-left: 10%;
+    }
+    
+}

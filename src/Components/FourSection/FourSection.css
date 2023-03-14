@@ -1,0 +1,24 @@
+.timer{
+    background: rgba(33, 37, 41, 0.22);
+    border-radius: 3px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width:70%;
+    margin-left: 15%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px 50px;
+}
+
+@media screen and (max-width:851px){
+    .timer{
+        flex-direction: column;
+        width:80%;
+        margin-left: 10%;
+        padding: 50px 10px;
+    }
+}

@@ -1,0 +1,89 @@
+.SevenSection{
+    width:70%;
+    margin-left: 15%;
+    display: flex;
+    position: relative;
+}
+
+.SevenSection .Text{
+    width:50%;
+    position: absolute;
+    top:25%;
+    left:40%;
+    background-color: #F7E1D459;
+    padding: 50px;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px #00000059(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: grid;
+    grid-row-gap: 30px;
+}
+.SevenSection .Text:hover{
+    top:0%;
+    left:0%;
+}
+.SevenSection .Text h3{
+    position: relative;
+}
+
+.SevenSection .Text h3::before{
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: 0%;
+    width: 30%;
+    height: 4px;
+    background-color: #1e1e1e;
+    border-radius: 30px;
+    transition: linear .3s;
+}
+.SevenSection .Text h3:hover::before{
+    width: 50%;
+}
+
+.SevenSection .Text h3::after{
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: 0%;
+    width: 30%;
+    height: 4px;
+    border-radius: 30px;
+    background-color: #1e1e1e;
+    transition: linear .3s;
+}
+.SevenSection .Text h3:hover::after{
+    width: 50%;
+}
+@media screen and (max-width:851px){
+    .SevenSection{
+        width:80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+    }   
+    .SevenSection .image img{
+        width: 100%;
+        height: 100%;
+    }
+    .SevenSection .Text{
+        position: absolute;
+        top:55%;
+        left:0%;
+        background-color: #F7E1D459;
+        padding: 30px 10px;
+        border-radius: 4px;
+        box-shadow: 0 4px 30px #00000059(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        display: grid;
+        grid-row-gap: 50px;
+        width: 80%;
+    }
+    .SevenSection .Text h3{
+        font-size: 23px;
+    }
+}

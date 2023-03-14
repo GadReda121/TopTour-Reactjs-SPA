@@ -1,0 +1,31 @@
+footer{
+    width:70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #000000;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+footer h4{
+    align-self: center;
+    margin-top: 7px;
+}
+
+footer h4 span{
+    color: #c9e8e2;
+}
+
+@media screen and (max-width:851px){
+footer{
+    margin-top: 100px;
+    width:90%;
+    margin-left: 5%;
+}
+footer h4{
+    font-size:15px;
+}
+}

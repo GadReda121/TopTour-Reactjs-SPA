@@ -1,0 +1,180 @@
+/* Start CSS Codes */
+.home{
+    height: calc(85vh);
+    width: 70%;
+    margin-left: 15%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 35% 60%;
+    grid-column-gap: 30px;
+}
+
+.home img{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.home img:hover{
+    transform: scale(1.1,1.1);
+}
+
+.home .text-home{
+    display: grid;
+    grid-column-gap: 30px;
+}
+
+.home .text-home div{
+    display: flex;
+    gap: 30px;
+}
+
+.home .text-home h1{
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background: -webkit-linear-gradient(#798692 , #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home .text-home h1::before{
+    content: '';
+    width: 30%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    top: -5%;
+    border-radius: 50px;
+    transition: linear .3s;
+}
+
+.home .text-home h1:hover::before{
+    width: 85%;
+}
+
+.home .text-home h1::after{
+    content: '';
+    width: 30%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: -5%;
+    left: 0%;
+    border-radius: 50px;
+    transition: linear .3s;
+}
+
+.home .text-home h1:hover::after{
+    width: 85%;
+}
+
+.home .text-home .img1 img{
+    width:100%;
+    height: 100%;
+}
+
+.home .text-home .img2 img{
+    width:100%;
+    height: 100%;
+}
+
+.mySwiper{
+    display: none;
+}
+
+.home-mobile{
+    display: none;
+}
+/* End CSS Codes */
+
+@media screen and (max-width:851px){
+    .home{
+        display: none;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .mySwiper{
+        display: flex;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .swiper-slide {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .titleHome{
+        display: flex;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .titleHome h1{
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .titleHome h1::before{
+        content: '';
+        width: 30%;
+        height: 3px;
+        background-color: #000;
+        position: absolute;
+        top: -5%;
+        border-radius: 50px;
+        transition: linear .3s;
+    }
+    
+    .titleHome h1:hover::before{
+        width: 85%;
+    }
+
+    .titleHome h1::after{
+        content: '';
+        width: 30%;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        bottom: -5%;
+        left: 0%;
+        border-radius: 50px;
+        transition: linear .3s;
+    }
+    
+    .titleHome h1:hover::after{
+        width: 85%;
+    }
+      
+    .swiper-pagination{
+        display: none;
+    }
+
+    .home-mobile{
+        height: calc(80vh);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
