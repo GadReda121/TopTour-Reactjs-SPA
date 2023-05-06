@@ -8,6 +8,7 @@ import SecondSection from './Components/SecondSection/SecondSection';
 import SevenSection from './Components/SevenSection/SevenSection';
 import SixSection from './Components/SixSection/SixSection';
 import ThirdSection from './Components/ThirdSection/ThirdSection';
+import Routes from './Components/Router/Routers';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <Navbar />
         <div  style={{display:'grid', gridRowGap:'150px'}} >
         <FristSection />
+        <Routes />
         <SecondSection />
         <ThirdSection />
         <FourSection />
